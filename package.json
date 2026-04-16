@@ -1,0 +1,28 @@
+{
+  "name": "valback",
+  "version": "1.0.0",
+  "description": "Express backend for logging user activity",
+  "main": "root/server.js",
+  "scripts": {
+    "start": "node root/server.js",
+    "dev": "nodemon root/server.js",
+    "create-db": "node create-database.js",
+    "migrate": "knex migrate:latest",
+    "migrate:rollback": "knex migrate:rollback",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "knex": "^3.1.0",
+    "mysql2": "^3.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
